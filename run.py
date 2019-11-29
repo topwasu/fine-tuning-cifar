@@ -109,7 +109,7 @@ def main():
 		resnet.cuda()
 	
 	# train
-	train_model(train_images, train_labels, resnet, 200, batch_size=64, verbose=True, use_gpu=use_gpu)
+	train_model(train_images, train_labels, resnet, 100, batch_size=64, verbose=True, use_gpu=use_gpu)
 	
 	# get test data
 	test_images, test_labels = get_cifar100(vehicle_1_indices, False)
